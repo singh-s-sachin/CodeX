@@ -17,6 +17,9 @@ class loginVC: UIViewController {
     }
     
 
+    @IBAction func closedloginbtn(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
     /*
     // MARK: - Navigation
 
