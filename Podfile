@@ -6,11 +6,13 @@ project 'CodeX.xcodeproj'
 target 'CodeX' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
-pod 'Alamofire'
+  pod 'Alamofire'
   pod 'SwiftyJSON'
   pod 'Firebase/Firestore'
   pod 'Firebase/Storage'
   pod 'Firebase/Core'
+  pod 'GoogleSignIn'
+  pod 'Firebase/Auth'
   # Pods for CodeX
 
 end

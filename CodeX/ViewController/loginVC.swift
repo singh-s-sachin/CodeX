@@ -7,8 +7,10 @@
 //
 
 import UIKit
+import GoogleSignIn
+import FirebaseAuth
 
-class loginVC: UIViewController {
+class loginVC: UIViewController, GIDSignInUIDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()

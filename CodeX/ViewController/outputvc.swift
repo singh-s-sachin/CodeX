@@ -10,11 +10,13 @@ import UIKit
 
 class outputvc: UIViewController {
     
+    @IBOutlet weak var message: UITextView!
     @IBOutlet weak var printoutput: UITextView!
     public var codevc: CodeVC?
     override func viewDidLoad() {
         super.viewDidLoad()
         printoutput.text = outputcode
+        message.isEditable = false
         // Do any additional setup after loading the view.
     }
     override func viewWillAppear(_ animated: Bool) {
