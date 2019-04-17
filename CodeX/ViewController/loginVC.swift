@@ -8,22 +8,33 @@
 
 import UIKit
 import GoogleSignIn
-import FirebaseAuth
+import Firebase
 
 class loginVC: UIViewController, GIDSignInUIDelegate {
-
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        GIDSignIn.sharedInstance().uiDelegate = self
+        if let appDelegate = UIApplication.shared.delegate as? AppDelegate {
+            appDelegate.loginvc = self
+        }
         // Do any additional setup after loading the view.
     }
-    
-
+    public func gotonextpage(){
+        performSegue(withIdentifier: "tocontent", sender: nil)
+    }
     @IBAction func closedloginbtn(_ sender: Any) {
-        self.dismiss(animated: true, completion: nil)
+         performSegue(withIdentifier: "back", sender: nil)
+    }
+    
+     @IBAction func googlesignin(_ sender: Any) {
+        GIDSignIn.sharedInstance().signIn()
+     }
+    @IBAction func fetchcodes(_ sender: Any) {
+        performSegue(withIdentifier: "tofetchcode", sender: nil)
     }
     /*
-    // MARK: - Navigation
+     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

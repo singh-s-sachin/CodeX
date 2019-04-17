@@ -9,19 +9,22 @@
 import UIKit
 import Alamofire
 import SwiftyJSON
+import Firebase
+import GoogleSignIn
 public var state = 0.1
-class CodeVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, UITextFieldDelegate{
+class CodeVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, UITextFieldDelegate, GIDSignInUIDelegate{
     public var Outputvc: outputvc?
     @IBOutlet weak var Selectlang: UITextField!
     @IBOutlet weak var dropdown: UIPickerView!
     @IBOutlet weak var workspace: UILabel!
     @IBOutlet weak var activity: UIActivityIndicatorView!
     @IBOutlet weak var progressbar: UIProgressView!
-    @IBOutlet weak var clean: RoundedButton!
+    @IBOutlet weak var clean: Roundedbutton!
     @IBOutlet weak var program: roundtextView!
+    @IBOutlet weak var changelanguage: Roundedbutton!
     @IBOutlet weak var inputval: roundtextView!
-    @IBOutlet weak var Run: RoundedButton!
-    @IBOutlet weak var compile: RoundedButton!
+    @IBOutlet weak var Run: Roundedbutton!
+    @IBOutlet weak var compile: Roundedbutton!
     @IBOutlet weak var BACK: UIButton!
     var k = "C"
     var list = [String](arrayLiteral: "c","cpp","java","go","python","kotlin","swift","typescript")
@@ -29,6 +32,7 @@ class CodeVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, UI
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        changelanguage.isHidden = true
         Codemanager.instance.codevc = self
         Selectlang.inputView = thePicker
         Run.isHidden = true
@@ -63,6 +67,8 @@ class CodeVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, UI
         program.isEditable=true
         inputval.isEditable=true
         compile.isEnabled=true
+        changelanguage.isHidden = false
+        self.view.endEditing(false)
     }
     func textFieldDidBeginEditing(_ textField: UITextField) {
         if textField == self.Selectlang{
@@ -78,6 +84,15 @@ class CodeVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, UI
     func output()
     {
         Codemanager.instance.compile_snippet(inputs : inputval.text, language: k, content: program.text )
+    }
+    func gotologin() {
+        print("I am here man")
+        if !GIDSignIn.sharedInstance().hasAuthInKeychain(){
+            performSegue(withIdentifier: "tologinin", sender: CodeVC())
+        }
+        else{
+            performSegue(withIdentifier: "tocontent", sender: CodeVC())
+        }
     }
     @IBAction func proceedbtnpressed(_ sender: Any) {
         progressbar.setProgress(progressbar.progress + 0.1, animated: true)
@@ -97,7 +112,7 @@ class CodeVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, UI
     }
     @IBAction func clearbtnpressed(_ sender: Any) {
         progressbar.setProgress(0.1, animated: true)
-        self.view.endEditing(true)
+      //self.view.endEditing(true)
        workspace.text = "Code :"
         dropdown.isHidden = false
         Run.isHidden = true
@@ -112,7 +127,7 @@ class CodeVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, UI
         activity.isHidden=true
     }
     @IBAction func loginbtnpressed(_ sender: Any) {
-        performSegue(withIdentifier: "tologinin", sender: nil)
+        gotologin()
     }
     @IBAction func backbtnpressed(_ sender: Any) {
         workspace.text = "Code :"
@@ -125,5 +140,10 @@ class CodeVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, UI
         progressbar.setProgress(0.2, animated: true)
     }
         
+    @IBAction func changelanguagebtnpressed(_ sender: Any) {
+        print("change")
+        self.view.endEditing(true)
+        changelanguage.isHidden = true
+    }
 }
 
