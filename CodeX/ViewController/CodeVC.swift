@@ -72,6 +72,7 @@ class CodeVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, UI
     }
     public func gotooutputscreen()
     {
+        progressbar.setProgress(1, animated: true)
         performSegue(withIdentifier: "tooutputscreen", sender: nil)
     }
     func output()

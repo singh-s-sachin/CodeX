@@ -46,7 +46,7 @@ class Codemanager {
             {(response) in
                     guard let data = response.data else { return }
                     do{
-                        self.codevc?.progressbar.setProgress(1, animated: true)
+                        self.codevc?.progressbar.setProgress(0.85, animated: true)
                         let json = try JSON(data: data)
                         print(json)
                         outputcode = json["stdout"].stringValue + "\n" + json["stderr"].stringValue + "\n" + json["error"].stringValue

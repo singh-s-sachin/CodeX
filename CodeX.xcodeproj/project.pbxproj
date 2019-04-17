@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		030BB2EA22673E9F00E350B6 /* Roundbutton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030BB2E922673E9F00E350B6 /* Roundbutton.swift */; };
 		0324179A226200C7007909D8 /* roundview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03241799226200C7007909D8 /* roundview.swift */; };
 		0324179C226223DB007909D8 /* loginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0324179B226223DB007909D8 /* loginVC.swift */; };
 		434E2D18225087170062E163 /* Codemanager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434E2D17225087170062E163 /* Codemanager.swift */; };
@@ -15,9 +16,7 @@
 		43B24A13224BFD6200C532A9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43B24A11224BFD6200C532A9 /* Main.storyboard */; };
 		43B24A15224BFD6700C532A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43B24A14224BFD6700C532A9 /* Assets.xcassets */; };
 		43B24A18224BFD6700C532A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43B24A16224BFD6700C532A9 /* LaunchScreen.storyboard */; };
-		43B24A20224BFFEE00C532A9 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B24A1F224BFFEE00C532A9 /* GradientView.swift */; };
 		43B24A23224C005200C532A9 /* CodeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B24A22224C005200C532A9 /* CodeVC.swift */; };
-		43B24A25224C2CC100C532A9 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B24A24224C2CC100C532A9 /* RoundedButton.swift */; };
 		43B24A27224C30DF00C532A9 /* roundtextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B24A26224C30DF00C532A9 /* roundtextView.swift */; };
 		43B24A29224C41DD00C532A9 /* outputvc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B24A28224C41DD00C532A9 /* outputvc.swift */; };
 		43B24A2C224C4DF200C532A9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B24A2B224C4DF200C532A9 /* Constants.swift */; };
@@ -25,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		030BB2E922673E9F00E350B6 /* Roundbutton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Roundbutton.swift; sourceTree = "<group>"; };
 		03241799226200C7007909D8 /* roundview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = roundview.swift; sourceTree = "<group>"; };
 		0324179B226223DB007909D8 /* loginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginVC.swift; sourceTree = "<group>"; };
 		434E2D17225087170062E163 /* Codemanager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Codemanager.swift; sourceTree = "<group>"; };
@@ -35,9 +35,7 @@
 		43B24A14224BFD6700C532A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		43B24A17224BFD6700C532A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		43B24A19224BFD6700C532A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		43B24A1F224BFFEE00C532A9 /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GradientView.swift; path = ../../Dean/View/GradientView.swift; sourceTree = "<group>"; };
 		43B24A22224C005200C532A9 /* CodeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeVC.swift; sourceTree = "<group>"; };
-		43B24A24224C2CC100C532A9 /* RoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RoundedButton.swift; path = ../../Dean/View/RoundedButton.swift; sourceTree = "<group>"; };
 		43B24A26224C30DF00C532A9 /* roundtextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = roundtextView.swift; path = ../../Dean/View/roundtextView.swift; sourceTree = "<group>"; };
 		43B24A28224C41DD00C532A9 /* outputvc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = outputvc.swift; sourceTree = "<group>"; };
 		43B24A2B224C4DF200C532A9 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -100,14 +98,13 @@
 				43B24A2A224C4DD700C532A9 /* constant */,
 				43B24A21224C002B00C532A9 /* ViewController */,
 				43B24A0D224BFD6200C532A9 /* AppDelegate.swift */,
-				43B24A1F224BFFEE00C532A9 /* GradientView.swift */,
-				43B24A24224C2CC100C532A9 /* RoundedButton.swift */,
 				43B24A26224C30DF00C532A9 /* roundtextView.swift */,
 				43B24A0F224BFD6200C532A9 /* ViewController.swift */,
 				43B24A11224BFD6200C532A9 /* Main.storyboard */,
 				43B24A14224BFD6700C532A9 /* Assets.xcassets */,
 				43B24A16224BFD6700C532A9 /* LaunchScreen.storyboard */,
 				43B24A19224BFD6700C532A9 /* Info.plist */,
+				030BB2E922673E9F00E350B6 /* Roundbutton.swift */,
 			);
 			path = CodeX;
 			sourceTree = "<group>";
@@ -291,14 +288,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				030BB2EA22673E9F00E350B6 /* Roundbutton.swift in Sources */,
 				43B24A10224BFD6200C532A9 /* ViewController.swift in Sources */,
-				43B24A25224C2CC100C532A9 /* RoundedButton.swift in Sources */,
 				0324179C226223DB007909D8 /* loginVC.swift in Sources */,
 				43B24A27224C30DF00C532A9 /* roundtextView.swift in Sources */,
 				43B24A29224C41DD00C532A9 /* outputvc.swift in Sources */,
 				43B24A0E224BFD6200C532A9 /* AppDelegate.swift in Sources */,
 				0324179A226200C7007909D8 /* roundview.swift in Sources */,
-				43B24A20224BFFEE00C532A9 /* GradientView.swift in Sources */,
 				43B24A23224C005200C532A9 /* CodeVC.swift in Sources */,
 				434E2D18225087170062E163 /* Codemanager.swift in Sources */,
 				43B24A2C224C4DF200C532A9 /* Constants.swift in Sources */,
