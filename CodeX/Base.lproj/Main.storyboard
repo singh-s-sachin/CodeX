@@ -74,7 +74,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lc6-Ra-ceN" customClass="Roundedbutton" customModule="CodeX" customModuleProvider="target">
-                                <rect key="frame" x="286" y="390" width="80" height="30"/>
+                                <rect key="frame" x="286" y="460" width="80" height="30"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="80" id="wCJ-lW-pqx"/>
@@ -92,7 +92,7 @@
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3kN-XA-vZP" customClass="roundtextView" customModule="CodeX" customModuleProvider="target">
-                                <rect key="frame" x="9" y="202" width="357" height="180"/>
+                                <rect key="frame" x="9" y="202" width="357" height="250"/>
                                 <color key="backgroundColor" red="0.8751274053309438" green="0.87028767211763203" blue="0.89405536167512689" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="250" id="Qr1-4I-dh6"/>
@@ -106,7 +106,7 @@
                                 </userDefinedRuntimeAttributes>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jH7-Li-bhw" customClass="Roundedbutton" customModule="CodeX" customModuleProvider="target">
-                                <rect key="frame" x="286" y="390" width="80" height="30"/>
+                                <rect key="frame" x="286" y="460" width="80" height="30"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="80" id="1sK-qJ-oLg"/>
@@ -125,7 +125,7 @@
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" bouncesZoom="NO" keyboardDismissMode="onDrag" translatesAutoresizingMaskIntoConstraints="NO" id="uHJ-Z7-XHe" customClass="roundtextView" customModule="CodeX" customModuleProvider="target">
-                                <rect key="frame" x="9" y="202" width="357" height="180"/>
+                                <rect key="frame" x="9" y="202" width="357" height="250"/>
                                 <color key="backgroundColor" red="0.87512740529999999" green="0.87028767210000002" blue="0.8940553617" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="180" id="0GA-Xa-ovo"/>
@@ -157,7 +157,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vt9-Yb-C5L">
-                                <rect key="frame" x="9" y="390" width="25" height="25"/>
+                                <rect key="frame" x="9" y="460" width="25" height="25"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" image="DISMISS"/>
                                 <connections>
@@ -665,8 +665,8 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="31j-ah-612"/>
-        <segue reference="TXr-Jh-OCn"/>
-        <segue reference="CaO-ev-aDq"/>
+        <segue reference="a6q-4e-yOu"/>
+        <segue reference="Q6C-ys-1Tv"/>
         <segue reference="mJk-QV-8WS"/>
     </inferredMetricsTieBreakers>
 </document>
