@@ -26,7 +26,6 @@ class CodeVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, UI
     @IBOutlet weak var Run: Roundedbutton!
     @IBOutlet weak var compile: Roundedbutton!
     @IBOutlet weak var BACK: UIButton!
-    var k = "C"
     var list = [String](arrayLiteral: "c","cpp","java","go","python","kotlin","swift","typescript")
     let thePicker = UIPickerView()
     
@@ -83,6 +82,8 @@ class CodeVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, UI
     }
     func output()
     {
+        code = program.text as String
+        k = self.Selectlang.text!
         Codemanager.instance.compile_snippet(inputs : inputval.text, language: k, content: program.text )
     }
     func gotologin() {
@@ -103,7 +104,6 @@ class CodeVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, UI
         program.isHidden = true
         dropdown.isHidden = true
         BACK.isHidden = false
-        
     }
     @IBAction func Submitbtnpressed(_ sender: Any) {
         progressbar.setProgress(0.45, animated: true)

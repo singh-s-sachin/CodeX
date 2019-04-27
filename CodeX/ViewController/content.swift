@@ -8,12 +8,31 @@
 
 import UIKit
 import GoogleSignIn
-class content: UIViewController, GIDSignInUIDelegate {
+import Firebase
 
+struct post {
+   let name : String
+}
+class content: UIViewController, GIDSignInUIDelegate,UITableViewDelegate, UITableViewDataSource {
+    var posts = [post]()
+    @IBOutlet weak var contents: UITableView!
+    @IBOutlet weak var activity: UIActivityIndicatorView!
     override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+       super.viewDidLoad()
+        activity.startAnimating()
+        contents.dataSource = self
+        let db = Firestore.firestore()
+        db.collection(Auth.auth().currentUser?.uid as Any as! String).getDocuments() { (querySnapshot, err) in
+            if let err = err {
+                print("Error getting documents: \(err)")
+            } else {
+                for document in querySnapshot!.documents {
+                   print("\(document.documentID) => \(document.data())")
+                    self.posts.insert(post(name: document.documentID), at: 0)
+                }
+                self.contents.reloadData()
+            }
+        }
     }
     
 
@@ -29,14 +48,15 @@ class content: UIViewController, GIDSignInUIDelegate {
         GIDSignIn.sharedInstance().signOut()
         performSegue(withIdentifier: "tosignin", sender: nil)
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+       return posts.count
     }
-    */
+    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! cellview
+        cell.labelname.text = posts[indexPath.row].name
+        self.activity.stopAnimating()
+        return cell
+    }
+   
 
 }

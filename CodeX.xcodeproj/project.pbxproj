@@ -12,6 +12,10 @@
 		030BB2F22267A6B100E350B6 /* content.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030BB2F12267A6B100E350B6 /* content.swift */; };
 		0324179A226200C7007909D8 /* roundview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03241799226200C7007909D8 /* roundview.swift */; };
 		0324179C226223DB007909D8 /* loginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0324179B226223DB007909D8 /* loginVC.swift */; };
+		03A71C93226A7A9100A66B8C /* GenerateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A71C92226A7A9100A66B8C /* GenerateVC.swift */; };
+		03A71C95226B536800A66B8C /* cellview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A71C94226B536800A66B8C /* cellview.swift */; };
+		03A71C97226B71D700A66B8C /* FetchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A71C96226B71D700A66B8C /* FetchVC.swift */; };
+		03A71C99226BC60B00A66B8C /* showcodeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A71C98226BC60B00A66B8C /* showcodeVC.swift */; };
 		434E2D18225087170062E163 /* Codemanager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434E2D17225087170062E163 /* Codemanager.swift */; };
 		43B24A0E224BFD6200C532A9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B24A0D224BFD6200C532A9 /* AppDelegate.swift */; };
 		43B24A10224BFD6200C532A9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B24A0F224BFD6200C532A9 /* ViewController.swift */; };
@@ -31,6 +35,11 @@
 		030BB2F12267A6B100E350B6 /* content.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = content.swift; sourceTree = "<group>"; };
 		03241799226200C7007909D8 /* roundview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = roundview.swift; sourceTree = "<group>"; };
 		0324179B226223DB007909D8 /* loginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginVC.swift; sourceTree = "<group>"; };
+		03A71C92226A7A9100A66B8C /* GenerateVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateVC.swift; sourceTree = "<group>"; };
+		03A71C94226B536800A66B8C /* cellview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cellview.swift; sourceTree = "<group>"; };
+		03A71C96226B71D700A66B8C /* FetchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchVC.swift; sourceTree = "<group>"; };
+		03A71C98226BC60B00A66B8C /* showcodeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = showcodeVC.swift; sourceTree = "<group>"; };
+		03A71C9A226CA80C00A66B8C /* CodeX.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CodeX.entitlements; sourceTree = "<group>"; };
 		434E2D17225087170062E163 /* Codemanager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Codemanager.swift; sourceTree = "<group>"; };
 		43B24A0A224BFD6200C532A9 /* CodeX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodeX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43B24A0D224BFD6200C532A9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -98,6 +107,7 @@
 		43B24A0C224BFD6200C532A9 /* CodeX */ = {
 			isa = PBXGroup;
 			children = (
+				03A71C9A226CA80C00A66B8C /* CodeX.entitlements */,
 				434E2D12224FFF5E0062E163 /* Service */,
 				43B24A2A224C4DD700C532A9 /* constant */,
 				43B24A21224C002B00C532A9 /* ViewController */,
@@ -121,6 +131,10 @@
 				43B24A28224C41DD00C532A9 /* outputvc.swift */,
 				0324179B226223DB007909D8 /* loginVC.swift */,
 				030BB2F12267A6B100E350B6 /* content.swift */,
+				03A71C92226A7A9100A66B8C /* GenerateVC.swift */,
+				03A71C94226B536800A66B8C /* cellview.swift */,
+				03A71C96226B71D700A66B8C /* FetchVC.swift */,
+				03A71C98226BC60B00A66B8C /* showcodeVC.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -178,6 +192,11 @@
 					43B24A09224BFD6200C532A9 = {
 						CreatedOnToolsVersion = 10.0;
 						LastSwiftMigration = 1020;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -298,12 +317,16 @@
 				030BB2F22267A6B100E350B6 /* content.swift in Sources */,
 				030BB2EA22673E9F00E350B6 /* Roundbutton.swift in Sources */,
 				43B24A10224BFD6200C532A9 /* ViewController.swift in Sources */,
+				03A71C99226BC60B00A66B8C /* showcodeVC.swift in Sources */,
+				03A71C93226A7A9100A66B8C /* GenerateVC.swift in Sources */,
 				0324179C226223DB007909D8 /* loginVC.swift in Sources */,
 				43B24A27224C30DF00C532A9 /* roundtextView.swift in Sources */,
+				03A71C95226B536800A66B8C /* cellview.swift in Sources */,
 				43B24A29224C41DD00C532A9 /* outputvc.swift in Sources */,
 				43B24A0E224BFD6200C532A9 /* AppDelegate.swift in Sources */,
 				0324179A226200C7007909D8 /* roundview.swift in Sources */,
 				43B24A23224C005200C532A9 /* CodeVC.swift in Sources */,
+				03A71C97226B71D700A66B8C /* FetchVC.swift in Sources */,
 				434E2D18225087170062E163 /* Codemanager.swift in Sources */,
 				43B24A2C224C4DF200C532A9 /* Constants.swift in Sources */,
 			);
@@ -452,10 +475,11 @@
 			baseConfigurationReference = 9B9B97A75AA4A86FE78AEC59 /* Pods-CodeX.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CodeX/CodeX.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A7AGCJK7WT;
 				INFOPLIST_FILE = CodeX/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -463,7 +487,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.sathyabama.CodeX;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -472,10 +496,11 @@
 			baseConfigurationReference = ACE71A9D33B96D3E448FA911 /* Pods-CodeX.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CodeX/CodeX.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A7AGCJK7WT;
 				INFOPLIST_FILE = CodeX/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -483,7 +508,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.sathyabama.CodeX;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

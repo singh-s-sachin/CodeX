@@ -7,10 +7,11 @@
 //
 
 import UIKit
-
+import GoogleSignIn
 class outputvc: UIViewController {
     
     @IBOutlet weak var message: UITextView!
+    @IBOutlet weak var saveprogram: Roundedbutton!
     @IBOutlet weak var printoutput: UITextView!
     public var codevc: CodeVC?
     override func viewDidLoad() {
@@ -19,9 +20,17 @@ class outputvc: UIViewController {
         message.isEditable = false
         // Do any additional setup after loading the view.
     }
+    override func viewDidAppear(_ animated: Bool) {
+        if (GIDSignIn.sharedInstance()?.hasAuthInKeychain())!{
+            saveprogram.isHidden = false
+        }
+    }
     override func viewWillAppear(_ animated: Bool) {
          printoutput.isEditable = false
         
+    }
+    @IBAction func savesnippetpressed(_ sender: Any) {
+    performSegue(withIdentifier: "generatecode", sender: nil)
     }
     @IBAction func closebtnpressed(_ sender: Any) {
         state = 0.45

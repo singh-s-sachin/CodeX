@@ -9,3 +9,5 @@
 import Foundation
 let run = "https://run.glot.io/languages/"
 let snippet = "https://run.glot.io/snippets"
+var code = ""
+var k = "c"
