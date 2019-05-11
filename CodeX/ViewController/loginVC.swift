@@ -23,6 +23,10 @@ class loginVC: UIViewController, GIDSignInUIDelegate {
     public func gotonextpage(){
         performSegue(withIdentifier: "tocontent", sender: nil)
     }
+    
+    /// <#Description#>
+    ///
+    /// - Parameter sender: <#sender description#>
     @IBAction func closedloginbtn(_ sender: Any) {
          performSegue(withIdentifier: "back", sender: nil)
     }

@@ -10,6 +10,7 @@ import Foundation
 import Alamofire
 import SwiftyJSON
 public var outputcode = "Running"
+
 class Codemanager {
     static let instance = Codemanager()
     public var codevc : CodeVC?
@@ -20,6 +21,7 @@ class Codemanager {
         ]
         var apilink = "https://run.glot.io/languages/" + language + "/latest"
         var fname = "codex"
+//        Language.C.fileExtension
         if(language == "python")
         {
             fname = fname + ".py"}

@@ -74,7 +74,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lc6-Ra-ceN" customClass="Roundedbutton" customModule="CodeX" customModuleProvider="target">
-                                <rect key="frame" x="286" y="460" width="80" height="30"/>
+                                <rect key="frame" x="286" y="390" width="80" height="30"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="80" id="wCJ-lW-pqx"/>
@@ -92,7 +92,7 @@
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3kN-XA-vZP" customClass="roundtextView" customModule="CodeX" customModuleProvider="target">
-                                <rect key="frame" x="9" y="202" width="357" height="250"/>
+                                <rect key="frame" x="9" y="202" width="357" height="180"/>
                                 <color key="backgroundColor" red="0.8751274053309438" green="0.87028767211763203" blue="0.89405536167512689" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="250" id="Qr1-4I-dh6"/>
@@ -106,7 +106,7 @@
                                 </userDefinedRuntimeAttributes>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jH7-Li-bhw" customClass="Roundedbutton" customModule="CodeX" customModuleProvider="target">
-                                <rect key="frame" x="286" y="460" width="80" height="30"/>
+                                <rect key="frame" x="286" y="390" width="80" height="30"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="80" id="1sK-qJ-oLg"/>
@@ -125,7 +125,7 @@
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" bouncesZoom="NO" keyboardDismissMode="onDrag" translatesAutoresizingMaskIntoConstraints="NO" id="uHJ-Z7-XHe" customClass="roundtextView" customModule="CodeX" customModuleProvider="target">
-                                <rect key="frame" x="9" y="202" width="357" height="250"/>
+                                <rect key="frame" x="9" y="202" width="357" height="180"/>
                                 <color key="backgroundColor" red="0.87512740529999999" green="0.87028767210000002" blue="0.8940553617" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="180" id="0GA-Xa-ovo"/>
@@ -157,7 +157,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vt9-Yb-C5L">
-                                <rect key="frame" x="9" y="460" width="25" height="25"/>
+                                <rect key="frame" x="9" y="390" width="25" height="25"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" image="DISMISS"/>
                                 <connections>
@@ -914,21 +914,51 @@
                                     <action selector="remove:" destination="lxJ-Kv-Raw" eventType="touchUpInside" id="plW-2G-TnJ"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This functionality is coming soon" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rlg-ai-e4c">
-                                <rect key="frame" x="9" y="321.5" width="357" height="24"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                <color key="textColor" red="1" green="0.189392844" blue="0.014053522129999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter code ID" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0es-Wt-BVX">
+                                <rect key="frame" x="9" y="80" width="357" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Edd-U9-7gp"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oKz-9R-eMO">
+                                <rect key="frame" x="9" y="112" width="357" height="0.5"/>
+                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="0.5" id="9hj-FB-BPo"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pnO-o5-rDX" customClass="Roundedbutton" customModule="CodeX" customModuleProvider="target">
+                                <rect key="frame" x="9" y="117.5" width="357" height="40"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="g3a-vd-bwr"/>
+                                </constraints>
+                                <state key="normal" title="View code">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="rlg-ai-e4c" firstAttribute="leading" secondItem="TGf-cY-gCC" secondAttribute="leading" constant="9" id="5b1-v4-p1y"/>
+                            <constraint firstItem="pnO-o5-rDX" firstAttribute="leading" secondItem="TGf-cY-gCC" secondAttribute="leading" constant="9" id="4Hm-8b-JWC"/>
+                            <constraint firstItem="oKz-9R-eMO" firstAttribute="top" secondItem="0es-Wt-BVX" secondAttribute="bottom" constant="2" id="7Dg-aw-6dt"/>
+                            <constraint firstItem="oKz-9R-eMO" firstAttribute="leading" secondItem="czW-v4-V78" secondAttribute="leading" constant="9" id="GY2-dj-57e"/>
+                            <constraint firstAttribute="trailing" secondItem="oKz-9R-eMO" secondAttribute="trailing" constant="9" id="MUH-d8-ehm"/>
+                            <constraint firstItem="0es-Wt-BVX" firstAttribute="top" secondItem="TGf-cY-gCC" secondAttribute="top" constant="60" id="Oe7-AV-fGr"/>
                             <constraint firstItem="TGf-cY-gCC" firstAttribute="trailing" secondItem="WsR-CZ-2Gf" secondAttribute="trailing" constant="12" id="UtG-p2-3Dy"/>
-                            <constraint firstItem="rlg-ai-e4c" firstAttribute="centerX" secondItem="czW-v4-V78" secondAttribute="centerX" id="VXF-sW-wZ3"/>
+                            <constraint firstItem="0es-Wt-BVX" firstAttribute="leading" secondItem="TGf-cY-gCC" secondAttribute="leading" constant="9" id="XoU-sd-H2X"/>
+                            <constraint firstItem="pnO-o5-rDX" firstAttribute="top" secondItem="oKz-9R-eMO" secondAttribute="bottom" constant="5" id="YFL-kV-R6L"/>
                             <constraint firstItem="WsR-CZ-2Gf" firstAttribute="top" secondItem="TGf-cY-gCC" secondAttribute="top" constant="9" id="ioc-sa-BxP"/>
-                            <constraint firstItem="TGf-cY-gCC" firstAttribute="trailing" secondItem="rlg-ai-e4c" secondAttribute="trailing" constant="9" id="ueC-1h-qZK"/>
-                            <constraint firstItem="rlg-ai-e4c" firstAttribute="centerY" secondItem="czW-v4-V78" secondAttribute="centerY" id="wU8-uH-o8G"/>
+                            <constraint firstItem="TGf-cY-gCC" firstAttribute="trailing" secondItem="pnO-o5-rDX" secondAttribute="trailing" constant="9" id="mME-eT-hH5"/>
+                            <constraint firstItem="TGf-cY-gCC" firstAttribute="trailing" secondItem="0es-Wt-BVX" secondAttribute="trailing" constant="9" id="yK8-v5-IVp"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="TGf-cY-gCC"/>
                     </view>
@@ -949,7 +979,7 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="31j-ah-612"/>
-        <segue reference="TXr-Jh-OCn"/>
+        <segue reference="a6q-4e-yOu"/>
         <segue reference="CaO-ev-aDq"/>
         <segue reference="mJk-QV-8WS"/>
     </inferredMetricsTieBreakers>
