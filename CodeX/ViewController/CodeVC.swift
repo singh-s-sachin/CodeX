@@ -11,6 +11,7 @@ import Alamofire
 import SwiftyJSON
 import Firebase
 import GoogleSignIn
+import Intents
 public var state = 0.1
 class CodeVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, UITextFieldDelegate, GIDSignInUIDelegate{
     public var Outputvc: outputvc?
@@ -31,6 +32,15 @@ class CodeVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, UI
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        addsiributton(to: view)
+        INPreferences.requestSiriAuthorization { INSiriAuthorizationStatus in
+            switch INSiriAuthorizationStatus{
+            case .authorized:
+                print("nacho bencho")
+            default:
+                print(INSiriAuthorizationStatus as Any)
+            }
+        }
         changelanguage.isHidden = true
         Codemanager.instance.codevc = self
         Selectlang.inputView = thePicker
@@ -45,8 +55,12 @@ class CodeVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, UI
     override func viewDidAppear(_ animated: Bool) {
         progressbar.setProgress(Float(state), animated: true)
         activity.isHidden = true
+        print(hg)
     }
-    
+    func addsiributton(to view: UIView){
+//        let buton =  INUIAddVoiceShortcutButton(style : .whiteOutline)
+//        view.addSubview(buton)
+    }
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
     }

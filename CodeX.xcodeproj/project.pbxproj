@@ -10,6 +10,15 @@
 		030BB2EA22673E9F00E350B6 /* Roundbutton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030BB2E922673E9F00E350B6 /* Roundbutton.swift */; };
 		030BB2EC2267892E00E350B6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 030BB2EB2267892D00E350B6 /* GoogleService-Info.plist */; };
 		030BB2F22267A6B100E350B6 /* content.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030BB2F12267A6B100E350B6 /* content.swift */; };
+		031686AF2297B7DD009C5C27 /* IntentsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 031686AE2297B7DD009C5C27 /* IntentsUI.framework */; };
+		031686B22297B7DD009C5C27 /* IntentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031686B12297B7DD009C5C27 /* IntentViewController.swift */; };
+		031686B52297B7DD009C5C27 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 031686B32297B7DD009C5C27 /* MainInterface.storyboard */; };
+		031686B92297B7DD009C5C27 /* CodeX-intentUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 031686AD2297B7DD009C5C27 /* CodeX-intentUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		031686BC2297B7DD009C5C27 /* CodeX-intent.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 031686A42297B7DD009C5C27 /* CodeX-intent.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		031686C92297E910009C5C27 /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 031686C82297E910009C5C27 /* Intents.intentdefinition */; };
+		031686CD229811DB009C5C27 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031686A62297B7DD009C5C27 /* IntentHandler.swift */; };
+		031686CE229811EA009C5C27 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031686A62297B7DD009C5C27 /* IntentHandler.swift */; };
+		031686CF229811EB009C5C27 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031686A62297B7DD009C5C27 /* IntentHandler.swift */; };
 		0324179A226200C7007909D8 /* roundview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03241799226200C7007909D8 /* roundview.swift */; };
 		0324179C226223DB007909D8 /* loginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0324179B226223DB007909D8 /* loginVC.swift */; };
 		03A71C93226A7A9100A66B8C /* GenerateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A71C92226A7A9100A66B8C /* GenerateVC.swift */; };
@@ -29,10 +38,51 @@
 		C49F473D94403E37DBB0F933 /* Pods_CodeX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6155EF8979534295B12AFB20 /* Pods_CodeX.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		031686B72297B7DD009C5C27 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 43B24A02224BFD6200C532A9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 031686AC2297B7DD009C5C27;
+			remoteInfo = "CodeX-intentUI";
+		};
+		031686BA2297B7DD009C5C27 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 43B24A02224BFD6200C532A9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 031686A32297B7DD009C5C27;
+			remoteInfo = "CodeX-intent";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		031686C32297B7DD009C5C27 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				031686BC2297B7DD009C5C27 /* CodeX-intent.appex in Embed App Extensions */,
+				031686B92297B7DD009C5C27 /* CodeX-intentUI.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		030BB2E922673E9F00E350B6 /* Roundbutton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Roundbutton.swift; sourceTree = "<group>"; };
 		030BB2EB2267892D00E350B6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		030BB2F12267A6B100E350B6 /* content.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = content.swift; sourceTree = "<group>"; };
+		031686A42297B7DD009C5C27 /* CodeX-intent.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "CodeX-intent.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		031686A62297B7DD009C5C27 /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		031686A82297B7DD009C5C27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		031686AD2297B7DD009C5C27 /* CodeX-intentUI.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "CodeX-intentUI.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		031686AE2297B7DD009C5C27 /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
+		031686B12297B7DD009C5C27 /* IntentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentViewController.swift; sourceTree = "<group>"; };
+		031686B42297B7DD009C5C27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		031686B62297B7DD009C5C27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		031686C82297E910009C5C27 /* Intents.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = Intents.intentdefinition; sourceTree = "<group>"; };
 		03241799226200C7007909D8 /* roundview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = roundview.swift; sourceTree = "<group>"; };
 		0324179B226223DB007909D8 /* loginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginVC.swift; sourceTree = "<group>"; };
 		03A71C92226A7A9100A66B8C /* GenerateVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateVC.swift; sourceTree = "<group>"; };
@@ -58,6 +108,21 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		031686A12297B7DD009C5C27 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		031686AA2297B7DD009C5C27 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				031686AF2297B7DD009C5C27 /* IntentsUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		43B24A07224BFD6200C532A9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -69,6 +134,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		031686A52297B7DD009C5C27 /* CodeX-intent */ = {
+			isa = PBXGroup;
+			children = (
+				031686A62297B7DD009C5C27 /* IntentHandler.swift */,
+				031686A82297B7DD009C5C27 /* Info.plist */,
+			);
+			path = "CodeX-intent";
+			sourceTree = "<group>";
+		};
+		031686B02297B7DD009C5C27 /* CodeX-intentUI */ = {
+			isa = PBXGroup;
+			children = (
+				031686B12297B7DD009C5C27 /* IntentViewController.swift */,
+				031686B32297B7DD009C5C27 /* MainInterface.storyboard */,
+				031686B62297B7DD009C5C27 /* Info.plist */,
+			);
+			path = "CodeX-intentUI";
+			sourceTree = "<group>";
+		};
 		14CF415BE75F42FBF57A4698 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -89,7 +173,10 @@
 		43B24A01224BFD6200C532A9 = {
 			isa = PBXGroup;
 			children = (
+				031686C82297E910009C5C27 /* Intents.intentdefinition */,
 				43B24A0C224BFD6200C532A9 /* CodeX */,
+				031686A52297B7DD009C5C27 /* CodeX-intent */,
+				031686B02297B7DD009C5C27 /* CodeX-intentUI */,
 				43B24A0B224BFD6200C532A9 /* Products */,
 				14CF415BE75F42FBF57A4698 /* Pods */,
 				A4839BEC4284C576F11D4DE2 /* Frameworks */,
@@ -100,6 +187,8 @@
 			isa = PBXGroup;
 			children = (
 				43B24A0A224BFD6200C532A9 /* CodeX.app */,
+				031686A42297B7DD009C5C27 /* CodeX-intent.appex */,
+				031686AD2297B7DD009C5C27 /* CodeX-intentUI.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -152,6 +241,7 @@
 			isa = PBXGroup;
 			children = (
 				6155EF8979534295B12AFB20 /* Pods_CodeX.framework */,
+				031686AE2297B7DD009C5C27 /* IntentsUI.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -159,6 +249,40 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		031686A32297B7DD009C5C27 /* CodeX-intent */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 031686C22297B7DD009C5C27 /* Build configuration list for PBXNativeTarget "CodeX-intent" */;
+			buildPhases = (
+				031686A02297B7DD009C5C27 /* Sources */,
+				031686A12297B7DD009C5C27 /* Frameworks */,
+				031686A22297B7DD009C5C27 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CodeX-intent";
+			productName = "CodeX-intent";
+			productReference = 031686A42297B7DD009C5C27 /* CodeX-intent.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		031686AC2297B7DD009C5C27 /* CodeX-intentUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 031686C12297B7DD009C5C27 /* Build configuration list for PBXNativeTarget "CodeX-intentUI" */;
+			buildPhases = (
+				031686A92297B7DD009C5C27 /* Sources */,
+				031686AA2297B7DD009C5C27 /* Frameworks */,
+				031686AB2297B7DD009C5C27 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CodeX-intentUI";
+			productName = "CodeX-intentUI";
+			productReference = 031686AD2297B7DD009C5C27 /* CodeX-intentUI.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		43B24A09224BFD6200C532A9 /* CodeX */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 43B24A1C224BFD6700C532A9 /* Build configuration list for PBXNativeTarget "CodeX" */;
@@ -169,10 +293,13 @@
 				43B24A08224BFD6200C532A9 /* Resources */,
 				1AA259EE738E3D0A399FF6E6 /* [CP] Embed Pods Frameworks */,
 				79273D5CBAD1191696306DD7 /* [CP] Copy Pods Resources */,
+				031686C32297B7DD009C5C27 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				031686B82297B7DD009C5C27 /* PBXTargetDependency */,
+				031686BB2297B7DD009C5C27 /* PBXTargetDependency */,
 			);
 			name = CodeX;
 			productName = CodeX;
@@ -185,15 +312,24 @@
 		43B24A02224BFD6200C532A9 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1000;
+				LastSwiftUpdateCheck = 1020;
 				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = "Sachin Kumar Singh";
 				TargetAttributes = {
+					031686A32297B7DD009C5C27 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					031686AC2297B7DD009C5C27 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
 					43B24A09224BFD6200C532A9 = {
 						CreatedOnToolsVersion = 10.0;
 						LastSwiftMigration = 1020;
 						SystemCapabilities = {
 							com.apple.Push = {
+								enabled = 1;
+							};
+							com.apple.Siri = {
 								enabled = 1;
 							};
 						};
@@ -214,11 +350,28 @@
 			projectRoot = "";
 			targets = (
 				43B24A09224BFD6200C532A9 /* CodeX */,
+				031686A32297B7DD009C5C27 /* CodeX-intent */,
+				031686AC2297B7DD009C5C27 /* CodeX-intentUI */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		031686A22297B7DD009C5C27 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		031686AB2297B7DD009C5C27 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				031686B52297B7DD009C5C27 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		43B24A08224BFD6200C532A9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -310,6 +463,23 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		031686A02297B7DD009C5C27 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				031686CE229811EA009C5C27 /* IntentHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		031686A92297B7DD009C5C27 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				031686CD229811DB009C5C27 /* IntentHandler.swift in Sources */,
+				031686B22297B7DD009C5C27 /* IntentViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		43B24A06224BFD6200C532A9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -320,6 +490,7 @@
 				03A71C99226BC60B00A66B8C /* showcodeVC.swift in Sources */,
 				03A71C93226A7A9100A66B8C /* GenerateVC.swift in Sources */,
 				0324179C226223DB007909D8 /* loginVC.swift in Sources */,
+				031686C92297E910009C5C27 /* Intents.intentdefinition in Sources */,
 				43B24A27224C30DF00C532A9 /* roundtextView.swift in Sources */,
 				03A71C95226B536800A66B8C /* cellview.swift in Sources */,
 				43B24A29224C41DD00C532A9 /* outputvc.swift in Sources */,
@@ -328,13 +499,35 @@
 				43B24A23224C005200C532A9 /* CodeVC.swift in Sources */,
 				03A71C97226B71D700A66B8C /* FetchVC.swift in Sources */,
 				434E2D18225087170062E163 /* Codemanager.swift in Sources */,
+				031686CF229811EB009C5C27 /* IntentHandler.swift in Sources */,
 				43B24A2C224C4DF200C532A9 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		031686B82297B7DD009C5C27 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 031686AC2297B7DD009C5C27 /* CodeX-intentUI */;
+			targetProxy = 031686B72297B7DD009C5C27 /* PBXContainerItemProxy */;
+		};
+		031686BB2297B7DD009C5C27 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 031686A32297B7DD009C5C27 /* CodeX-intent */;
+			targetProxy = 031686BA2297B7DD009C5C27 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
+		031686B32297B7DD009C5C27 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				031686B42297B7DD009C5C27 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
 		43B24A11224BFD6200C532A9 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -354,6 +547,86 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		031686BD2297B7DD009C5C27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A7AGCJK7WT;
+				INFOPLIST_FILE = "CodeX-intent/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sathyabama.CodeX.CodeX-intent";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		031686BE2297B7DD009C5C27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A7AGCJK7WT;
+				INFOPLIST_FILE = "CodeX-intent/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sathyabama.CodeX.CodeX-intent";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		031686BF2297B7DD009C5C27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A7AGCJK7WT;
+				INFOPLIST_FILE = "CodeX-intentUI/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sathyabama.CodeX.CodeX-intentUI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		031686C02297B7DD009C5C27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A7AGCJK7WT;
+				INFOPLIST_FILE = "CodeX-intentUI/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sathyabama.CodeX.CodeX-intentUI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		43B24A1A224BFD6700C532A9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -474,6 +747,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9B9B97A75AA4A86FE78AEC59 /* Pods-CodeX.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = CodeX/CodeX.entitlements;
 				CODE_SIGN_STYLE = Automatic;
@@ -495,6 +769,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = ACE71A9D33B96D3E448FA911 /* Pods-CodeX.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = CodeX/CodeX.entitlements;
 				CODE_SIGN_STYLE = Automatic;
@@ -515,6 +790,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		031686C12297B7DD009C5C27 /* Build configuration list for PBXNativeTarget "CodeX-intentUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				031686BF2297B7DD009C5C27 /* Debug */,
+				031686C02297B7DD009C5C27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		031686C22297B7DD009C5C27 /* Build configuration list for PBXNativeTarget "CodeX-intent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				031686BD2297B7DD009C5C27 /* Debug */,
+				031686BE2297B7DD009C5C27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		43B24A05224BFD6200C532A9 /* Build configuration list for PBXProject "CodeX" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
